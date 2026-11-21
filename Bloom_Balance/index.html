@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloom Balance — Avance de Proyecto</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header class="encabezado">
+    <h1>Bloom Balance</h1>
+    <p id="saludo">Bienvenida a tu espacio de bienestar diario</p>
+  </header>
+
+  <main class="contenedor">
+    <!--Tracker de hidratación-->
+    <section class="tarjeta" aria-labelledby="titulo-agua">
+      <h2 id="titulo-agua">Hidratación diaria</h2>
+      <p>Vasos consumidos: <strong id="vasos-contador">0</strong> / 8</p>
+      <div class="barra-fondo">
+        <div id="barra-agua" class="barra-progreso"></div>
+      </div>
+      <div class="acciones">
+        <button type="button" id="btn-sumar-vaso">+ 1 vaso</button>
+        <button type="button" id="btn-reiniciar-vasos" class="secundario">Reiniciar</button>
+      </div>
+    </section>
+
+    <!--Checklist de hábitos-->
+    <section class="tarjeta" aria-labelledby="titulo-habitos">
+      <h2 id="titulo-habitos">Hábitos del día</h2>
+      <ul id="lista-habitos" class="lista-habitos">
+        <li>
+          <label><input type="checkbox" class="habito-item" /> Estiramiento o pausa activa</label>
+        </li>
+        <li>
+          <label><input type="checkbox" class="habito-item" /> Sesión de estudio enfocada</label>
+        </li>
+        <li>
+          <label><input type="checkbox" class="habito-item" /> Rutina de cuidado personal</label>
+        </li>
+        <li>
+          <label><input type="checkbox" class="habito-item" /> Lectura o desconexión sin pantallas</label>
+        </li>
+      </ul>
+      <p id="mensaje-habitos" class="mensaje">Marca tus hábitos para ir floreciendo tu día.</p>
+    </section>
+
+    <!-- Módulo 3: Mini temporizador Pomodoro -->
+    <section class="tarjeta" aria-labelledby="titulo-pomodoro">
+      <h2 id="titulo-pomodoro">Enfoque Pomodoro</h2>
+      <p id="reloj-pomodoro" class="reloj">25:00</p>
+      <div class="acciones">
+        <button type="button" id="btn-iniciar">Iniciar</button>
+        <button type="button" id="btn-pausar" class="secundario">Pausar</button>
+        <button type="button" id="btn-reset-pomo" class="secundario">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Bloom Balance • Avance de Programación en HTML5 (HTML5, CSS3 y JavaScript)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
